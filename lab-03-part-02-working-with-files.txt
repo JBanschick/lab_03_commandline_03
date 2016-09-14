@@ -139,7 +139,9 @@ cd .. <ENTER>
 Write out the command that you used and what happened.
 ----------
 
+rmdir my_files <ENTER>
 
+rmdir: my_files/: Directory not empty
 
 ==========
 14. Try removing the directory called my_files using rm.
@@ -147,7 +149,9 @@ Write out the command that you used and what happened.
 Write out the command that you used and what happened.
 ----------
 
+rm my_files <ENTER>
 
+rm: my_files/: is a directory
 
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
@@ -157,7 +161,7 @@ Force the removal of the directory and files using the -rf flag
 $ rm -rf my_files
 ----------
 
-
+rm -rf my_files/ <ENTER>
 
 ==========
 16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
@@ -169,7 +173,7 @@ Use the command called cat on the file to show its contents.
 Describe what happened below.
 ----------
 
-
+All contents of the file were shown.
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
