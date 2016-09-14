@@ -12,22 +12,39 @@ Follow the instructions line-by-line.
 [NO OUTPUT]
 ----------
 ==========
-2. Find out if mtec1002-lab-02 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
+2. Find out if mtec1002-lab-03 already exists (from the previous lab).  If it doesn't, go back to the previous lab and find the steps regarding downloading the lab materials.
+
+ls <ENTER>
 
 (See steps 1-8 in http://foureyes.github.io/mtec1002-spring2014/labs/03/lab-03-part-02-working-with-files.txt)
-[NO OUTPUT]
+
+-k			          Library			    isus
+Adlm			        MPLABXProjects	mtec1002-lab-03
+Adobe			        Movies			    mtec1002-lab-03.tar.gz
+Applications	    Music			      mtec1003
+D.L calc 2.maxpat	Pictures		    pymel.log
+D.L calc.maxpat		Public			    secret.tar.gz
+Desktop			      Things			    stuff
+Documents		      __MACOSX		    xgen
+
 ----------
 ==========
 3. Change your directory mtec1002-lab-03
-[NO OUTPUT]
+
+cd mtec1002-lab-03 <ENTER>
+
 ----------
 ==========
 4. Create a directory called my_files
-[NO OUTPUT]
+
+mkdir my_files <ENTER>
+
 ----------
 ==========
 5. Change the directory to my_files
-[NO OUTPUT]
+
+cd my_files <ENTER>
+
 ----------
 ==========
 6. Create a new file using touch.
@@ -37,7 +54,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+foo.txt
 
 ==========
 7. Create another new file using touch.
@@ -50,10 +67,16 @@ $ touch bar.txt
 ==========
 8. List the files in this directory using the flag that gives the most details.
 
+ls -alt <ENTER>
+
 Copy and paste the output below.
 ----------
 
-
+total 0
+drwxr-xr-x  4 student  staff  136 Sep 14 11:22 .
+-rw-r--r--  1 student  staff    0 Sep 14 11:22 bar.txt
+-rw-r--r--  1 student  staff    0 Sep 14 11:22 foo.txt
+drwxr-xr-x  7 student  staff  238 Sep 14 11:20 ..
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
@@ -62,6 +85,15 @@ Copy and paste the output below.
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
 
+cp bar.txt baz.txt <ENTER>
+ls -alt <ENTER>
+
+total 0
+drwxr-xr-x  5 student  staff  170 Sep 14 11:24 .
+-rw-r--r--  1 student  staff    0 Sep 14 11:24 baz.txt
+-rw-r--r--  1 student  staff    0 Sep 14 11:22 bar.txt
+-rw-r--r--  1 student  staff    0 Sep 14 11:22 foo.txt
+drwxr-xr-x  7 student  staff  238 Sep 14 11:20 ..
 
 
 ==========
@@ -69,21 +101,37 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+
+rm bar.txt <ENTER>
+ls -alt <ENTER>
+
+total 0
+drwxr-xr-x  4 student  staff  136 Sep 14 11:26 .
+-rw-r--r--  1 student  staff    0 Sep 14 11:24 baz.txt
+-rw-r--r--  1 student  staff    0 Sep 14 11:22 foo.txt
+drwxr-xr-x  7 student  staff  238 Sep 14 11:20 ..
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
-
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
 
+mv foo.txt qux.txt <ENTER>
+ls -alt <ENTER>
 
+total 0
+drwxr-xr-x  4 student  staff  136 Sep 14 11:27 .
+-rw-r--r--  1 student  staff    0 Sep 14 11:24 baz.txt
+-rw-r--r--  1 student  staff    0 Sep 14 11:22 qux.txt
+drwxr-xr-x  7 student  staff  238 Sep 14 11:20 ..
 
 ==========
 12. Go up one directory so that you're in ~/mtec1002-lab-03.
 [NO OUTPUT]
 ----------
 
-
+cd .. <ENTER>
 
 ==========
 13. Try removing the directory called my_files using rmdir.
