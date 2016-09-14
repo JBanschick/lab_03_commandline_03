@@ -24,8 +24,8 @@ Adobe			        Movies			    mtec1002-lab-03.tar.gz
 Applications	    Music			      mtec1003
 D.L calc 2.maxpat	Pictures		    pymel.log
 D.L calc.maxpat		Public			    secret.tar.gz
-Desktop			      Things			    stuff
-Documents		      __MACOSX		    xgen
+Desktop   Things			    stuff
+Documents   __MACOSX		    xgen
 
 ----------
 ==========
